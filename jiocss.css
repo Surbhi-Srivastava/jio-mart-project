@@ -1,0 +1,608 @@
+/*akash's work start here*/
+* {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+#container {
+    width: 100vw;
+    height: 100%;
+   
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0078AD;
+    padding: 20px 10px;
+    
+}
+
+#navbar img {
+    height: 50px;
+    width:100px;
+}
+
+#navbar .location,
+.navbar .cart,
+#navbar .sign-in {
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.sign-in{
+    font-size:20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.search-bar {
+    position: relative;
+    width:500px;
+
+
+}
+
+.search-bar input {
+    width: 100%;
+    color: white;
+    background-color: #0C5273;
+
+}
+
+.search-bar .ri-search-2-line {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+    color: white;
+
+}
+
+#navbar input {
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+
+
+}
+
+.cart i,
+.sign-in i {
+    font-size:25px;
+    cursor: pointer;
+    color: white;
+}
+.sign-in{
+    font-size:30px;
+}
+
+#navbar .sign-in:hover {
+    text-decoration: underline;
+}
+/*mid sec is here  when akash created nav bar css*/
+#mid-sec {
+    height: 50px;
+    width: 100%;
+    background-color: #0C5273;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+#mid-sec>a {
+    color: white;
+    margin-top: 13px;
+    text-decoration: none;
+}
+
+#mid-sec>a:hover {
+    text-decoration: underline;
+}
+/*till here*/
+/*surbhi started here*/
+.navbar2 {
+    background-color: #0C5273;
+    text-align: center;
+    display: block;
+    margin-top: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+ 
+    
+}
+
+.navbar2 ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.navbar2 ul li {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+  
+
+}
+
+.navbar2 ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+   
+}
+
+.navbar2 ul li i {
+    color: #878b9c;
+}
+
+.sub_menu_1 {
+    display: none;
+}
+
+.navbar2 ul li:hover .sub_menu_1 {
+    display: block;
+    position: absolute;
+    background-color: #0078AD;
+}
+
+.navbar2 ul li:hover .sub_menu_1 ul {
+    display: block;
+    margin-left: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar2 ul li:hover .sub_menu_1 ul li {
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.navbar2 ul li:hover .sub_menu_1 ul li a:hover {
+    color: lightskyblue;
+}
+
+/* she worked till here*/
+#slider_container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 330px;
+    margin-top:30px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#slider_bar {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+#slider_bar div {
+    flex: 0 0 100%;
+}
+
+#slider_bar img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.slider-button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition:background 0.3s ease;
+}
+
+.slider-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.slider-button.active {
+    background: blue;
+    color: white;
+}
+
+
+#big-img {
+    width: 100%;
+    height: 300px;
+    margin-top:60px;
+}
+
+#big-img>div>img {
+    height: 250px;
+    width: 96%;
+    margin-left: 30px;
+    border-radius: 25px;
+}
+
+#items {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top:25px;
+    margin-left:25px;
+}
+.head{
+    margin-left:30px;
+}
+.sav-deals{
+    margin-top:15px;
+    margin-left:30px;
+}
+
+#items>div>a>img {
+    width: 180px;
+    height: 230px;
+    border-radius: 25px;
+}
+
+#saving-deals {
+    display: flex;
+    gap:5px;
+    justify-content: space-around;
+    margin-top:10px;
+    margin-left:25px;
+}
+
+#saving-deals>div>a>img {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+
+}
+
+
+.rate-list {
+    margin-top: 30px;
+}
+
+.ad-btn {
+    margin-top: 30px;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 19px;
+    background-color: white;
+    color: #0C5273;
+    cursor: pointer;
+
+}
+
+#seperator {
+    width: 100%;
+    height: 90px;
+}
+/*surbhi started here*/
+/* daily offers */
+#ss {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+#daily {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    row-gap: 24px;
+    margin-bottom: 30px;
+}
+
+#daily .dailybox {
+    margin-right: 16px;
+    float: left;
+    height: 100%;
+    background: #efd6da;
+    border-radius: 15px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#daily .dailybox .dailydisc {
+    background: url(https://www.jiomart.com/assets/version1662053821/smartweb/images/offer_bg.png) no-repeat top center;
+    padding: 8px 0px 0px;
+    color: white;
+    font-family: sans-serif;
+
+    position: absolute;
+    background-size: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#daily .dailyproduct {
+    margin: 42px auto 16px;
+    padding: 0 4px 0 4px;
+    display: block;
+    text-align: center;
+    height: 100%;
+}
+
+#daily .dailyproduct .dailyimg {
+    width: 70%;
+}
+
+#daily .nishant_dailyproduct:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#daily .dailyproduct .dailyprodname {
+    color: #000;
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Payment offers */
+#paymentoff {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 24px 18px 50px;
+    padding: 0 24px;
+    text-align: center;
+
+}
+
+#paymentoff .paymentpart {
+    margin-right: 16px;
+}
+
+#paymentoff img {
+    width: 70%;
+}
+
+/* Shop by categories */
+#shopbycat {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5px;
+}
+
+#shopbycat .nishant_shopcatbox {
+    padding: 5px;
+    width: 15%;
+    border-radius: 5px;
+    border: 1px solid rgba(111, 114, 132, .25);
+    box-sizing: border-box;
+}
+
+.shopcatbox {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#shopbycat .shopcatbox img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#shopbycat .shopcatbox img {
+    margin-left: 10px;
+    border-style: none;
+    max-width: 80%;
+    margin-top: 12px;
+}
+
+#shopbycat .shopcatbox .shopcatname {
+    overflow: hidden;
+    line-height: 16px;
+    height: 32px;
+    font-size: 16px;
+    display: block;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+* a {
+    text-decoration: none !important;
+}
+
+/* ************************************************************ */
+#t-shirt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* #t-shirt .zoom{
+        border-radius: 10px;
+        margin-bottom: 20px;
+       
+     } */
+#t-shirt img {
+    width: 90%;
+}
+
+#t-shirt img:hover {
+    transition: transform 0.2s;
+    transform: scale(1.02);
+}
+
+#jeans {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin: 20px;
+
+
+
+}
+
+#jeans .hover1 {
+    border-radius: 10px;
+    border: 1px solid peachpuff;
+    width: 100%;
+
+
+}
+
+.hover1:hover {
+    transition: transform 0.2s;
+    transform: scale(1.02);
+    outline: 1px solid peachpuff;
+}
+
+
+#abottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#bottom img {
+    width: 100%;
+}
+
+#menssection img {
+    width: 100%;
+}
+
+#menssection img:hover {
+    transform: scale(1.02);
+}
+
+#col1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    /* margin-top: 20px;
+            margin-bottom: 20px; */
+}
+
+#col2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#menssection button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+
+#col3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h5~p {
+    font-size: 11px;
+    color: #333333BF;
+}
+
+.parentbox>h5 {
+    font-size: 12px;
+    font-weight: 550;
+}
+
+#span {
+    color: rgb(0, 145, 255);
+    font-weight: bolder;
+}
+
+#link {
+    color: rgb(0, 145, 255);
+}
+
+#parentbox {
+    display: flex;
+    background-color: #f3f3f3;
+    line-height: normal;
+    font-family: sans-serif;
+
+    padding: 2%;
+}
+
+#parentbox>div:first-child {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+#childdiv {
+    width: 27%;
+    border-left: 1px solid rgb(222, 215, 215);
+    padding-left: 2%;
+    line-height: normal;
+    font-family: sans-serif;
+}
+
+#childdiv>div {
+    width: 58%;
+}
+
+h5~img {
+    margin-left: 2px;
+}
+
+#img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+/* ************************till here************************************ *

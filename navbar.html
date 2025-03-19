@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jio Mart Redesign</title>
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./jiocss.css">
+	<link rel="stylesheet" href="jio.js">
+</head>
+<style>
+    * {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100%;
+   
+  
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0078AD;
+    padding: 20px 10px;
+    
+}
+
+#navbar img {
+    height: 50px;
+    width:100px;
+}
+
+#navbar .location,
+.navbar .cart,
+#navbar .sign-in {
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.sign-in{
+    font-size:20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.search-bar {
+    position: relative;
+    width:500px;
+
+
+}
+
+.search-bar input {
+    width: 100%;
+    color: white;
+    background-color: #0C5273;
+
+}
+
+.search-bar .ri-search-2-line {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+    color: white;
+
+}
+
+#navbar input {
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+
+
+}
+
+.cart i,
+.sign-in i {
+    font-size:25px;
+    cursor: pointer;
+    color: white;
+}
+.sign-in{
+    font-size:30px;
+}
+
+#navbar .sign-in:hover {
+    text-decoration: underline;
+}
+
+#mid-sec {
+    height: 50px;
+    width: 100%;
+    background-color: #0C5273;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+#mid-sec>a {
+    color: white;
+    margin-top: 13px;
+    text-decoration: none;
+}
+
+#mid-sec>a:hover {
+    text-decoration: underline;
+}
+
+.navbar2 {
+    background-color: #0C5273;
+    text-align: center;
+    display: block;
+    margin-top: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+ 
+    
+}
+
+.navbar2 ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.navbar2 ul li {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+  
+
+}
+
+.navbar2 ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+   
+}
+
+.navbar2 ul li i {
+    color: #878b9c;
+}
+
+.sub_menu_1 {
+    display: none;
+}
+
+.navbar2 ul li:hover .sub_menu_1 {
+    display: block;
+    position: absolute;
+    background-color: #0078AD;
+}
+
+.navbar2 ul li:hover .sub_menu_1 ul {
+    display: block;
+    margin-left: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar2 ul li:hover .sub_menu_1 ul li {
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.navbar2 ul li:hover .sub_menu_1 ul li a:hover {
+    color: lightskyblue;
+}
+
+</style>
+<body>
+	<body>
+		<div id="container">
+			<nav id="navbar">
+				<img src="https://www.jiomart.com/assets/ds2web/images/Jiomart-logo-ds2.0.svg?v=24" alt="Alogo">
+				<div class="location"><i class="ri-map-pin-line"></i>Deliver to Delhi 11001</div>
+				<div class="search-bar">
+					<i class="ri-search-2-line"></i>
+					<input type="text" placeholder="Search jio Mart">
+				</div>
+				<div class="cart"><i class="ri-shopping-cart-line"></i></div>
+				<a href="loginpage.html"><i class="ri-account-circle-line"></i>Sign In</a>
+			</nav>
+		</div>
+	
+		<div class="navbar2">
+			<ul class="menu">
+				<li class="menu_text">
+					<a href="#" onclick="product()">Fruits & Vegetables <i class="fas fa-chevron-down"></i></a>
+					<div class="sub_menu_1">
+						<ul>
+							<li><a href="#" onclick="product()">Fresh Fruits</a></li>
+							<li><a href="#" onclick="product()">Fresh Vegetables</a></li>
+							<li><a href="#" onclick="product()">Herbs & Seasonings</a></li>
+							<li><a href="#" onclick="product()">Exotic & Vegetables</a></li>
+						</ul>
+					</div>
+			</li>
+			<li class="menu_text">
+				<a href="">Premium Fruits <i class="fas fa-chevron-down"></i></a>
+				<div class="sub_menu_1">
+					<ul>
+						<li><a href="">Avocado, Peach, Plum</a></li>
+						<li><a href="">Cherries, Berries & Exotic Fruits</a></li>
+						<li><a href="">Pomegranate, Papaya & Pineapple</a></li>
+						<li><a href="">Citrus, Mango & Grapes</a></li>
+						<li><a href="">Apples & Pears</a></li>
+						<li><a href="">Banana, Melon & Cocunut</a></li>
+						<li><a href="">Seasonal & Minor Fruits</a></li>
+						<li><a href="">Dates</a></li>
+						<li><a href="">Organic & Residue Certified</a></li>
+						<li><a href="">Gift, Assorted & XL Packs</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_text">
+				<a href="">Dairy & Bakery <i class="fas fa-chevron-down"></i></a>
+				<div class="sub_menu_1">
+					<ul>
+						<li><a href="">Dairy</a></li>
+						<li><a href="">Toast & Khari</a></li>
+						<li><a href="">Cakes & Muffins</a></li>
+						<li><a href="">Breads and Buns</a></li>
+						<li><a href="">Baked Cookies</a></li>
+						<li><a href="">Bakery Snacks</a></li>
+						<li><a href="">Batter & Chutney</a></li>
+						<li><a href="">Cheese</a></li>
+						<li><a href="">Ghee</a></li>
+						<li><a href="">Paneer & Tofu</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_text">
+				<a href="">Staples <i class="fas fa-chevron-down"></i></a>
+				<div class="sub_menu_1">
+					<ul>
+						<li><a href="">Atta, Flours & Sooji</a></li>
+						<li><a href="">Dals & Pulses</a></li>
+						<li><a href="">Rice & Rice Products</a></li>
+						<li><a href="">Edible Oils</a></li>
+						<li><a href="">Massalas & Spices</a></li>
+						<li><a href="">Salt, Sugar and Jaggery</a></li>
+						<li><a href="">Soya Products, Wheat & Other</a></li>
+						<li><a href="">Grains</a></li>
+						<li><a href="">Dry Fruits & Nuts</a></li>
+						<li><a href="">Combo Offer</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_text">
+				<a href="">Men <i class="fas fa-chevron-down"></i></a>
+				<div class="sub_menu_1">
+					<ul>
+						<li><a href="">Clothing Accessories</a></li>
+						<li><a href="">Western Wear</a></li>
+						<li><a href="">Inner Wear</a></li>
+						<li><a href="">Bags, Belts & Wallets</a></li>
+						<li><a href="">Ethnic Wear</a></li>
+						<li><a href="">Footwear</a></li>
+						<li><a href="">Fusion Wear</a></li>
+						<li><a href="">Night & Lounge</a></li>
+						<li><a href="">Fashion Jewellery</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_text">
+				<a href="">Women <i class="fas fa-chevron-down"></i></a>
+				<div class="sub_menu_1">
+					<ul>
+						<li><a href="">Clothing Accessories</a></li>
+						<li><a href="">Western Wear</a></li>
+						<li><a href="">Inner Wear</a></li>
+						<li><a href="">Bags, Belts & Wallets</a></li>
+						<li><a href="">Ethnic Wear</a></li>
+						<li><a href="">Footwear</a></li>
+						<li><a href="">Fusion Wear</a></li>
+						<li><a href="">Night & Lounge</a></li>
+						<li><a href="">Fashion Jewellery</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_text">
+				<a href="">Boys <i class="fas fa-chevron-down"></i></a>
+				<div class="sub_menu_1">
+					<ul>
+						<li><a href="">Western Wear</a></li>
+						<li><a href="">Ethnic Wear</a></li>
+						<li><a href="">Clothing Accessories</a></li>
+						<li><a href="">Footwear</a></li>
+						<li><a href="">Inner Wear</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_text">
+				<a href="">Girls <i class="fas fa-chevron-down"></i></a>
+				<div class="sub_menu_1">
+					<ul>
+						<li><a href="">Western Wear</a></li>
+						<li><a href="">Ethnic Wear</a></li>
+						<li><a href="">Clothing Accessories</a></li>
+						<li><a href="">Bags, Belts & Wallets</a></li>
+						<li><a href="">Footwear</a></li>
+						<li><a href="">Night & Lounge</a></li>
+						<li><a href="">Inner Wear</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<br><br>
+    </body>
+    </body></html>

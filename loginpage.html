@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./loginpage.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <i class="ri-close-large-line"></i>
+        <div id="para-graph">
+            <div>
+                <h2>Sign in</h2>
+                <div id="img-logo">
+                    <p>Verify Your Mobile Number to access Your <strong>JioMart</strong> account</p>
+                    <img src="https://jep-asset.akamaized.net/JioMart/Common/Jiomart_LOGO_Icon.png" alt="">
+                </div>
+            </div>
+            <div id="mobile-num">
+                <label for="mobile-number">Mobile number</label>
+                <div class="input-group">
+                    <span class="country-code">+91 -</span>
+                    <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number">
+                </div>
+                <div id="btn">
+                    <button id="continue-btn">Continue</button>
+                    <p>By continuing, you agree to our Terms and Conditions of Use, privacy and Retail Privacy Policy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const continueBtn = document.getElementById('continue-btn');
+        const mobileInput = document.getElementById('mobile-number');
+        // Add event listener to the continue button
+        continueBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default action of submitting the form
+
+            // Validate the mobile number
+            const mobileNumber = mobileInput.value.trim();
+            if (isValidMobileNumber(mobileNumber)) {
+                // Proceed to the next page or action (here we'll just log for demonstration)
+                console.log('Valid mobile number:', mobileNumber);
+                // Redirect or show success message
+                window.location.href = 'otppage.html'; // Replace with actual redirect URL
+            } else {
+                // Show error message or handle invalid input
+                alert('Please enter a valid mobile number.');
+            }
+        });
+
+        function isValidMobileNumber(number) {
+            // Basic validation for demo purposes
+            // You can customize this based on your requirements (e.g., regex validation)
+            return number.length === 10 && /^\d+$/.test(number); // Assuming a 10-digit number
+        }
+    });
+</script>
+
+</html>

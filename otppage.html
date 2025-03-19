@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTP Verification - Jio Mart</title>
+<link rel="stylesheet" href="./otppage.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h2>OTP Verification</h2>
+    <p> Enter the OTP Sent To Your Mobile Number.</p>
+    <form id="otpForm">
+      <input type="text" id="otpInput" maxlength="6" placeholder="Enter OTP" required>
+      <p class="resend"><a href="#">Resend OTP</a></p>
+      <button id="verify-btn" type="submit">Verify</button>
+    </form>
+    <p>By continuing, you agree to our <strong>Terms and Conditions of Use, Privacy Policy and Retail Account Privacy Policy.</strong></p>
+  </div>
+</body>
+<script>
+  // JavaScript code for OTP verification
+  document.getElementById('otpForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+  // Add our OTP verification logic here
+    var otpInput = document.getElementById('otpInput').value;
+    var otp = '1234'; // This is the OTP to verify against
+
+    if (otpInput === otp) {
+      alert('OTP is correct. Verification successful!');
+      // Here you can redirect to another page or perform further actions upon successful verification
+      //here we will redirect to jio page
+      window.location.href = 'jio.html';
+    } else {
+      // When OTP verification fails
+      alert('Incorrect OTP. Please try again.');
+      // Optionally, you can reset the form or display an error message
+    }
+  });
+</script>
+</html>
